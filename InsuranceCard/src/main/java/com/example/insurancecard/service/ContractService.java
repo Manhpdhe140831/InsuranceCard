@@ -23,4 +23,6 @@ public interface ContractService {
     List<ContractDto> findContractByCode(String code);
 
     ContractDto getContractById(Long id);
+
+    ContractDto renewContract(ContractDto contractDto, Long id);
 }

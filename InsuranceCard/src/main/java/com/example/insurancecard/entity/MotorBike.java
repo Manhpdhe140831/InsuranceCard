@@ -19,24 +19,29 @@ public class MotorBike {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "license", length = 9, unique = true)
+    @Column(name = "license")
     private String license;
-    @Column(name = "model", length = 255)
+    @Column(name = "model")
     private String model;
-    @Column(name = "manufacturer", length = 255)
+    @Column(name = "manufacturer")
     private String manufacturer;
-    @Column(name = "color", length = 255)
+    @Column(name = "color")
     private String color;
     @Column(name = "yearOfMake")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date MFG;
-    @Column(name = "frameNumber", length = 255)
+    @Column(name = "frameNumber")
     private String frameNumber;
-    @Column(name = "engineNumber", length = 255)
+    @Column(name = "engineNumber")
     private String engineNumber;
+
+    private  String image;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "account_id")
     private Account account;
+
+
+
 
 }

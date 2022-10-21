@@ -151,4 +151,9 @@ public class ContractServiceImpl implements ContractService {
             return null;
     }
 
+    @Override
+    public ContractDto renewContract(ContractDto contractDto, Long id) {
+        return null;
+    }
+
 }

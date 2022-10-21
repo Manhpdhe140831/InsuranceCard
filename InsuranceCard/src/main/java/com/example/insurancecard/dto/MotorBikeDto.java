@@ -6,6 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.Column;
 import javax.persistence.JoinColumn;
@@ -25,6 +26,7 @@ public class MotorBikeDto {
     private Date MFG;
     private String frameNumber;
     private String engineNumber;
+    private String image;
 
     private AccountDto accountDto;
 
@@ -37,10 +39,12 @@ public class MotorBikeDto {
         this.setMFG(motorBike.getMFG());
         this.setFrameNumber(motorBike.getFrameNumber());
         this.setEngineNumber(motorBike.getEngineNumber());
+        this.setImage(motorBike.getImage());
 
         if (null != motorBike.getAccount()){
             accountDto = new AccountDto(motorBike.getAccount());
         }
     }
+
 
 }

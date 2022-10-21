@@ -26,30 +26,32 @@ public class Account {
 
     @Column(name = "password")
     private String password;
-    @Column(name = "fullName", length = 255)
+    @Column(name = "fullName", columnDefinition = "nvarchar(255)")
     private String name;
+
 //    @Column(name = "gender")
 //    private boolean gender;
-    @Column(name = "nationality", length = 255)
+
+    @Column(name = "gender")
+    private int gender;
+    @Column(name = "nationality", columnDefinition = "nvarchar(255)")
+
     private String folk;
     @Column(name = "birthDate")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date brithDate;
     @Column(name = "phoneNumber", length = 10)
     private String phone;
-<<<<<<< HEAD
     @Column(name = "email")
     private String email;
 
-=======
->>>>>>> cd7dc86fe1845850817c0cf3ac3cafca6a828613
-    @Column(name = "country", length = 255)
+    @Column(name = "country", columnDefinition = "nvarchar(255)")
     private String country;
-    @Column(name = "city", length = 255)
+    @Column(name = "city", columnDefinition = "nvarchar(255)")
     private String city;
-    @Column(name = "district", length = 255)
+    @Column(name = "district", columnDefinition = "nvarchar(255)")
     private String district;
-    @Column(name = "street", length = 255)
+    @Column(name = "street", columnDefinition = "nvarchar(255)")
     private String street;
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="role_id")

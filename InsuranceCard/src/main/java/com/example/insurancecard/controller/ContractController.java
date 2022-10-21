@@ -57,4 +57,7 @@ public class ContractController {
         List<ContractDto> list = contractService.getContractByAccountID(id);
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
+
+
 }
+
