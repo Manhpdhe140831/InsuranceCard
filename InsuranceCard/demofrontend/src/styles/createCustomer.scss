@@ -1,8 +1,7 @@
 .container-create-Cus {
-    padding: 0 200px;
     font-size: 17px;
-    background-color: #2691d9;
-    padding: 30px 300px;
+    background-color: #dc20ad;
+    padding: 10%;
 }
 
 .container-create-Cus h1 {
@@ -16,9 +15,9 @@
 }
 
 .main-create-Cus {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 80px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .flex-profile {
@@ -35,6 +34,9 @@
     display: inline-block;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;  
 }
 
 .container button:hover {
@@ -71,7 +73,7 @@
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    
+    -webkit-appearance: none;
     margin: 0;
 }
 

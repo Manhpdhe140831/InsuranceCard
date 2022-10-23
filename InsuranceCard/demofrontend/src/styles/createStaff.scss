@@ -1,8 +1,7 @@
 .container-create-staff {
-    padding: 0 200px;
     font-size: 17px;
-    background-color: #2691d9;
-    padding: 30px 300px;
+    background-color:  #dc20ad;
+    padding: 10%;
 }
 
 .container-create-staff h1 {
@@ -18,7 +17,7 @@
 .main-create-staff {
     background-color: #fff;
     padding: 80px;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .flex-profile {
@@ -32,9 +31,11 @@
 .container-create-staff input:not([type=radio]) {
     padding: 12px 20px;
     margin: 4px 0;
-    display: inline-block;
+    display: flex;
+    width: 100%;
     border-bottom: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 10px ;
 }
 
 .container button:hover {
@@ -74,7 +75,10 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-
+.icon {
+    position: relative;
+    top: 2px;
+}
 .container-create-staff h1 {
     font-size: xxx-large;
     text-align: center;
