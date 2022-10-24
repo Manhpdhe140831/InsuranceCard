@@ -1,6 +1,6 @@
 .container-create-Cus {
     font-size: 17px;
-    background-color: #dc20ad;
+    background-color: rgb(196, 188, 188);
     padding: 10%;
 }
 
@@ -32,11 +32,11 @@
     padding: 12px 20px;
     margin: 4px 0;
     display: inline-block;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid rgb(0, 0, 0);
     box-sizing: border-box;
     display: flex;
     width: 100%;
-    border-radius: 10px;  
+    border-radius: 5px;  
 }
 
 .container button:hover {

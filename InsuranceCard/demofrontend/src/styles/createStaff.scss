@@ -1,6 +1,6 @@
 .container-create-staff {
     font-size: 17px;
-    background-color:  #dc20ad;
+    background-color:   rgb(196, 188, 188);
     padding: 10%;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .main-create-staff {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     padding: 80px;
     border-radius: 20px;
 }
@@ -33,9 +33,9 @@
     margin: 4px 0;
     display: flex;
     width: 100%;
-    border-bottom: 1px solid #ccc;
+    border: 1px solid rgb(0, 0, 0);
     box-sizing: border-box;
-    border-radius: 10px ;
+    border-radius: 3px ;
 }
 
 .container button:hover {
